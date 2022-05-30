@@ -8,12 +8,12 @@ const Login = ({navigation} ) => {
   return (
     <View style={styles.mainBox}>
       <View style={styles.box1}>
-        <Image 
-        style={styles.boxImage}
-        source={require('./img/Login.jpg')}></Image>
+        <Image
+          style={styles.boxImage}
+          source={require('./img/Login.jpg')}></Image>
       </View>
       <View style={styles.box2}>
-      <TextInput
+        <TextInput
           label="Kullanıcı Adı"
           style={{margin: 10}}
           error={userError}
@@ -30,12 +30,11 @@ const Login = ({navigation} ) => {
         <Button
           color="#936af4"
           title="Giriş Yap"
-          onPress={() => navigation.navigate("ProductList")}
+          onPress={() => navigation.navigate('Product')}
         />
       </View>
-
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
